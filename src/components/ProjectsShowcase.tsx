@@ -45,16 +45,21 @@ export function ProjectsShowcase({ lang }: { lang: Language }) {
         </article>
 
         <article className="portfolio-card manarah-card">
-          <div className="manarah-visual" role="img" aria-label={ar ? "لوحة تعريفية نصية لمنصة منارة، وليست لقطة من واجهة التطبيق" : "Typographic identity panel for Manarah, not an application screenshot"}>
-            <svg viewBox="0 0 180 220" fill="none" aria-hidden="true"><path d="M90 16v175M64 58h52M70 83h40M76 108h28M58 191h64M69 58l21-42 21 42M76 191l14-28 14 28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="90" cy="82" r="60" stroke="currentColor" strokeOpacity=".28"/><circle cx="90" cy="82" r="79" stroke="currentColor" strokeOpacity=".16"/></svg>
-            <span className="manarah-word">{ar ? "مَنَارَة" : "مَنَارَة"}</span>
-            <span className="manarah-caption">MANARAH · EDTECH</span>
-          </div>
+          <a className="manarah-visual" href="https://halaqa-system.vercel.app/ar" target="_blank" rel="noreferrer" aria-label={ar ? "زيارة منصة منارة" : "Visit the Manarah platform"}>
+            <span className="manarah-logo-frame"><img src="/images/manarah-logo-profile.png" alt={ar ? "شعار منصة منارة" : "Manarah platform logo"} width="1080" height="1080" loading="lazy" decoding="async" /></span>
+            <span className="manarah-identity"><strong>مَنَارَة</strong><small>{ar ? "منظومة الحلقات" : "Quran circles system"}</small></span>
+            <span className="manarah-visit">{ar ? "زيارة المنصة" : "Visit platform"}<b aria-hidden="true">↗</b></span>
+          </a>
           <div className="portfolio-copy">
             <p className="eyebrow">{ar ? "تقنية التعليم · 2026—الآن" : "EDUCATION TECHNOLOGY · 2026—PRESENT"}</p>
             <h2>{ar ? "منارة" : "Manarah"}</h2>
             <p className="portfolio-role">{ar ? "المؤسس وقائد المنتج" : "Founder & Product Lead"}</p>
-            <p>{ar ? "منصة تعليمية سحابية لتنظيم ومتابعة حلقات دراسة القرآن. تسجيل الحضور عبر QR وقاعدة البيانات الأساسية قيد التشغيل؛ وتقارير التقييم قيد التطوير." : "A cloud platform for managing and tracking Quranic study circles. QR attendance and the core database are operational; evaluation reports are in development."}</p>
+            <p>{ar ? "منظومة لإدارة ومتابعة حلقات تحفيظ القرآن: تحضير سريع ببطاقات ذكية، وتقييم للتسميع، وعرض مباشر للمتصدرين." : "A system for managing Quran study circles: smart-card attendance, recitation assessment and a live honor display."}</p>
+            <ul className="manarah-features" aria-label={ar ? "وظائف منصة منارة" : "Manarah platform capabilities"}>
+              <li>{ar ? "تحضير ذكي" : "Smart attendance"}</li>
+              <li>{ar ? "تقييم التسميع" : "Recitation assessment"}</li>
+              <li>{ar ? "شاشة تكريم" : "Honor display"}</li>
+            </ul>
           </div>
         </article>
 
@@ -68,7 +73,7 @@ export function ProjectsShowcase({ lang }: { lang: Language }) {
             <p className="eyebrow">{ar ? "القيادة الشبابية · المشاركة المدنية" : "YOUTH LEADERSHIP · CIVIC PARTICIPATION"}</p>
             <h2>{ar ? "قيادة شبابية محلية" : "Local youth leadership"}</h2>
             <p className="portfolio-role">{ar ? "ممثل شباب منطقة المنصورة · بلدية طرابلس المركز" : "Youth Representative, Al-Mansoura · Tripoli Center Municipality"}</p>
-            <p>{ar ? "اختيرت لتمثيل شباب منطقة المنصورة في مخيم القيادات المحلية للشباب، والمشاركة في حوارات التنمية المجتمعية والعمل المدني." : "Selected to represent Al-Mansoura youth at the Local Leadership Youth Camp, contributing to civic development and community impact discussions."}</p>
+            <p>{ar ? "اختير إسلام لتمثيل شباب منطقة المنصورة في مخيم القيادات المحلية للشباب، والمشاركة في حوارات التنمية المجتمعية والعمل المدني." : "Selected to represent Al-Mansoura youth at the Local Leadership Youth Camp, contributing to civic development and community impact discussions."}</p>
             <p className="portfolio-note">{ar ? "شهادة تقدير من المجلس المحلي للشباب." : "Certificate of Appreciation from the Local Youth Council."}</p>
           </div>
         </article>
