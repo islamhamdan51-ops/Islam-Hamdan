@@ -38,7 +38,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.dir = dir;
     document.body.style.fontFamily =
       lang === "ar"
-        ? "'Noto Naskh Arabic', 'Noto Sans Arabic', serif"
+        ? "'Noto Sans Arabic', 'Noto Naskh Arabic', Arial, sans-serif"
         : "var(--font-sans)";
     try {
       localStorage.setItem("islam_lang", lang);
